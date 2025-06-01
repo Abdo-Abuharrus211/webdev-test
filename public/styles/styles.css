@@ -5,26 +5,50 @@
     box-sizing: border-box
 }
 
+/* Theme preference colors */
+@media (prefers-color-scheme: light) {
+    :root {
+        --text: hsl(77, 20%, 7%);
+        --background: hsl(72, 20%, 95%);
+        --primary: hsl(72, 17%, 28%);
+        --secondary: hsl(131, 17%, 68%);
+        --accent: hsl(148, 17%, 45%);
+    }
+}
 
-/* TODO: 
-
-    Global colors
-    variables
-    fonts
-    atomics : h1, h2, h3, and p
-    anchors and teir hover state
-    classes for containers and buttons
-    consistent spacings
- */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: hsl(77, 19%, 93%);
+        --background: hsl(72, 20%, 5%);
+        --primary: hsl(70, 17%, 72%);
+        --secondary: hsl(131, 17%, 32%);
+        --accent: hsl(148, 17%, 55%);
+    }
+}
 
 /* Variable definitions */
 :root {
-    /* Colors named by 'color-shade'*/
-
     /* ff and ff2 fonts */
-
+    --ff1: "Open Sans", sans-serif;
+    --ff2: "Oswald", sans-serif;
+    /* font sizes */
+    --fsize1: 1rem;
+    --fsize2: 1.125rem;
+    --fsize3: 1.25rem;
+    --fsize4: 1.5rem;
+    --fsize5: 0.875rem;
+    /* Spacings */
+    --spacing1: 4px;
+    --spacing2: 8px;
+    --spacing3: 16px;
+    --spacing4: 20px;
+    --spacing5: 40px;
+    --spacing6: 80px;
+    --spacing7: 160px;
     /* fonts in typography file */
-
+    --h1: 600 3rem/1.2em var(--ff1);
+    --h2: 600 2rem/1.2em var(--ff2);
+    --p: 1rem/1.5em var(--ff1);
 }
 
 /* HTML global styles */
@@ -35,8 +59,59 @@ html {
 body {
     /* use your defined for globals for bg, font, and color */
     text-wrap: balance;
+    font: var(--p);
+    background-color: var(--background);
+    color: var(--text);
 }
 
+h1 {
+    font: var(--h1);
+    color: var(--primary);
+    margin: var(--spacing1);
+}
+
+h2 {
+    font: var(--h2);
+    color: var(--primary);
+    margin: var(--spacing2);
+}
+
+p {
+    margin: var(--spacing2);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+.btn,
+button {
+    all: unset;
+    background-color: var(--primary);
+    font: var(--p);
+    color: var(--background);
+    margin: var(--spacing2) auto;
+    padding: var(--spacing2) var(--spacing3);
+    display: inline-block;
+    border-radius: var(--spacing2);
+    border-bottom: solid var(--spacing1) var(--accent);
+    cursor: pointer;
+}
+
+button:hover {
+    scale: 1.125
+}
+
+img {
+    width: 80%;
+}
+
+/* Utility Classes for quick styles during dev*/
 
 /* Margins and Paddings */
 .padding1 {
