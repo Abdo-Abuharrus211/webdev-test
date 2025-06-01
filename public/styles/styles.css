@@ -99,7 +99,7 @@ button {
     padding: var(--spacing2) var(--spacing3);
     display: inline-block;
     border-radius: var(--spacing2);
-    border-bottom: solid var(--spacing1) var(--accent);
+    /* border-bottom: solid var(--spacing1) var(--accent); */
     cursor: pointer;
 }
 
