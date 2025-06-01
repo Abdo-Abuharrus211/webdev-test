@@ -1,0 +1,96 @@
+/* Clean reset for everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+/* TODO: 
+
+    Global colors
+    variables
+    fonts
+    atomics : h1, h2, h3, and p
+    anchors and teir hover state
+    classes for containers and buttons
+    consistent spacings
+ */
+
+/* Variable definitions */
+:root {
+    /* Colors named by 'color-shade'*/
+
+    /* ff and ff2 fonts */
+
+    /* fonts in typography file */
+
+}
+
+/* HTML global styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* use your defined for globals for bg, font, and color */
+    text-wrap: balance;
+}
+
+
+/* Margins and Paddings */
+.padding1 {
+    padding: var(--spacing1) 0;
+}
+
+.padding2 {
+    padding: var(--spacing2) 0;
+}
+
+.padding3 {
+    padding: var(--spacing3) 0;
+}
+
+.padding4 {
+    padding: var(--spacing4) 0;
+}
+
+.padding5 {
+    padding: var(--spacing5) 0;
+}
+
+.padding6 {
+    padding: var(--spacing6) 0;
+}
+
+.padding7 {
+    padding: var(--spacing7) 0;
+}
+
+.margin1 {
+    margin: var(--spacing1) auto;
+}
+
+.margin2 {
+    margin: var(--spacing2) auto;
+}
+
+.margin3 {
+    margin: var(--spacing3) auto;
+}
+
+.margin4 {
+    margin: var(--spacing4) auto;
+}
+
+.margin5 {
+    margin: var(--spacing5) auto;
+}
+
+.margin6 {
+    margin: var(--spacing6) auto;
+}
+
+.margin7 {
+    margin: var(--spacing7) auto;
+}
